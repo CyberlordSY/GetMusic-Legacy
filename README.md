@@ -22,7 +22,12 @@ Welcome to **GetMusic**, a sleek, dark-themed music streaming website that lets 
 
 ## 🚀 Getting Started
 
-1. **Clone the repository**  
+**Clone the repository**  
    ```bash
    git clone https://github.com/CyberlordSY/GetMusic-Legacy.git
    cd GetMusic-Legacy
+  ```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
