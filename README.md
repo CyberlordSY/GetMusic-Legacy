@@ -22,11 +22,66 @@ Welcome to **GetMusic**, a sleek, dark-themed music streaming website that lets 
 
 ## 🚀 Getting Started
 
-**Clone the repository**  
+  ### 1. Clone the repository  
    ```bash
    git clone https://github.com/CyberlordSY/GetMusic-Legacy.git
    cd GetMusic-Legacy
   ```
+   ### 2. Start Localhost Server
+
+  Start **XAMPP**, **WAMP**, or any local server environment you prefer.  
+  Make sure the following services are running:
+
+  - **Apache**
+  - **MySQL**
+
+  You can start them from the XAMPP/WAMP control panel.
+
+
+
+  ### 3. Import the Database
+
+  1. Open [phpMyAdmin](http://localhost/phpmyadmin) in your browser.
+  2. Create a new database (e.g., name it `getmusic`).
+  3. Import the provided SQL file into the new database:
+    - Select the newly created database from the left sidebar.
+    - Click on the **Import** tab at the top.
+    - Choose the file `database.sql` from the project folder.
+    - Click **Go** to import the database successfully.
+
+
+
+  ### 4. Configure Database Credentials
+
+  Locate the PHP file where the database connection is defined:
+
+  - `/includes/config.php`  
+
+  Update the credentials to match your local environment:
+
+```php
+$servername = "localhost";
+$username = "root";
+$password = ""; // use your password if set
+$dbname = "getmusic"; // Use the same name as the database you created
+```
+Save the file after editing.
+
+### 5. Run the Project
+
+After saving the configuration changes, deploy the project by following these steps:
+
+1. Move the project folder `GetMusic-Legacy` to your web server’s root directory:
+   - **For XAMPP:** Place it inside the `htdocs/` folder  
+   - **For WAMP:** Place it inside the `www/` folder  
+
+2. Launch your browser and visit:
+```
+http://localhost/GetMusic-Legacy
+```
+The website should now be live on your local server.
+
+
 
 ## License
 
